@@ -50,10 +50,12 @@ public class Grid {
                 for (int j = 0; j < 8; j++) {
                     grid[j][i].setFilled(false);
                     grid[j][i].setColor(Color.BLACK);
-                    for (int k = 0; k < 3; k++) {
+                    for (int k = 0; k < i; k++) {
                         grid[j][i-k].setColor(grid[j][i-k-1].getColor());
                         grid[j][i-k].setFilled(grid[j][i-k-1].getFilled());
                     }
+                    grid[j][0].setFilled(false);
+                    grid[j][0].setColor(Color.BLACK);
                 }
                 // add one to the number of lines completed this turn
                 line += 1;

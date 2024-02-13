@@ -17,7 +17,6 @@ that I worked on, and moving onto another project would be more beneficial for m
 There are also a few bugs that I have not fixed, such as:
 
 - When rotating a piece and the newly rotated piece overlaps with another piece, the current piece will overlap with the already fixed piece and stop moving
-- Sometimes when the game goes fast, completing a line doesn't actually delete all of the pieces in that line (unknown reason)
 - The end of the game doesn't end when the top is reached, but after placing 1-2 more blocks
 - There are probably more bugs that I have not tested/discovered yet
 
